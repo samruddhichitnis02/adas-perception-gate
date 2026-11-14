@@ -1,0 +1,22 @@
+# --- dataset (large; licensed, must not be redistributed) ---
+nuimages-v1.0-all-metadata/
+nuimages-v1.0-all-samples/
+data/
+
+# --- environments and caches ---
+.venv/
+.yolo_cfg/
+__pycache__/
+*.pyc
+
+# --- model weights, training run folders, raw logs ---
+runs/
+*.pt
+logs/
+
+# --- large regenerable outputs (rebuild with src/predict.py) ---
+results/preds/
+
+# --- compiled binaries (rebuild with the g++ command in the README) ---
+cpp/build/
+*.exe

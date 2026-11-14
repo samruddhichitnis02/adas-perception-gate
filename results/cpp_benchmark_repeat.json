@@ -1,0 +1,21 @@
+{
+  "run": "baseline_s0",
+  "repeats": 7,
+  "machine": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "taxonomy": {
+    "n_pred": 103425,
+    "n_gt": 131676,
+    "identical": true,
+    "python_median_s": 1.286348,
+    "cpp_median_s": 0.01974,
+    "speedup_cpp_vs_python": 65.2
+  },
+  "match_iou0.5": {
+    "n_pred": 1477818,
+    "identical_python_cpp_numba": true,
+    "python_median_s": 2.556332,
+    "cpp_median_s": 0.038598,
+    "numba_median_s": 0.032414,
+    "speedup_cpp_vs_python": 66.2
+  }
+}

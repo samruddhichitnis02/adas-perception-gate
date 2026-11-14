@@ -1,0 +1,87 @@
+{
+  "taxonomy": {
+    "degraded_s0": {
+      "cpp_python_identical": true,
+      "n_differing_entries": 0,
+      "python_seconds": 0.888,
+      "cpp_compute_seconds": 0.0136,
+      "n_pred_classified": 79729,
+      "n_gt": 131676,
+      "n_images": 16445
+    },
+    "baseline_s0": {
+      "cpp_python_identical": true,
+      "n_differing_entries": 0,
+      "python_seconds": 1.329,
+      "cpp_compute_seconds": 0.022071,
+      "n_pred_classified": 103425,
+      "n_gt": 131676,
+      "n_images": 16445
+    },
+    "strong_aug_s0": {
+      "cpp_python_identical": true,
+      "n_differing_entries": 0,
+      "python_seconds": 2.527,
+      "cpp_compute_seconds": 0.018865,
+      "n_pred_classified": 101324,
+      "n_gt": 131676,
+      "n_images": 16445
+    },
+    "baseline_s1": {
+      "cpp_python_identical": true,
+      "n_differing_entries": 0,
+      "python_seconds": 1.338,
+      "cpp_compute_seconds": 0.026174,
+      "n_pred_classified": 105603,
+      "n_gt": 131676,
+      "n_images": 16445
+    },
+    "hires_s0": {
+      "cpp_python_identical": true,
+      "n_differing_entries": 0,
+      "python_seconds": 1.474,
+      "cpp_compute_seconds": 0.021138,
+      "n_pred_classified": 114361,
+      "n_gt": 131676,
+      "n_images": 16445
+    },
+    "strong_aug_s1": {
+      "cpp_python_identical": true,
+      "n_differing_entries": 0,
+      "python_seconds": 1.338,
+      "cpp_compute_seconds": 0.019798,
+      "n_pred_classified": 103658,
+      "n_gt": 131676,
+      "n_images": 16445
+    },
+    "hires_s1": {
+      "cpp_python_identical": true,
+      "n_differing_entries": 0,
+      "python_seconds": 1.477,
+      "cpp_compute_seconds": 0.022548,
+      "n_pred_classified": 115796,
+      "n_gt": 131676,
+      "n_images": 16445
+    }
+  },
+  "match": {
+    "run": "degraded_s0",
+    "n_predictions": 2664554,
+    "thresholds": {
+      "0.5": {
+        "cpp_equals_python": true,
+        "cpp_equals_numba": true,
+        "python_seconds": 4.272,
+        "cpp_compute_seconds": 0.055954,
+        "numba_seconds": 0.0714
+      },
+      "0.75": {
+        "cpp_equals_python": true,
+        "cpp_equals_numba": true,
+        "python_seconds": 6.355,
+        "cpp_compute_seconds": 0.081669,
+        "numba_seconds": 0.0838
+      }
+    }
+  }
+}

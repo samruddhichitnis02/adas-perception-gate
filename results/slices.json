@@ -1,0 +1,647 @@
+{
+  "dark_threshold_mean_gray": 80.0,
+  "min_boxes_for_claims": 30,
+  "box_size_cutoffs_px2": [
+    1024,
+    9216
+  ],
+  "edge_px": 2,
+  "splits": {
+    "train": {
+      "images": 16000,
+      "boxes": 128753,
+      "slices": {
+        "attr:cycle.with_rider": {
+          "images": 1451,
+          "boxes": 1583,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "motorcycle": 1283,
+            "bicycle": 300
+          }
+        },
+        "attr:cycle.without_rider": {
+          "images": 3217,
+          "boxes": 4970,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "bicycle": 3014,
+            "motorcycle": 1956
+          }
+        },
+        "attr:pedestrian.moving": {
+          "images": 6542,
+          "boxes": 19832,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "pedestrian": 19832
+          }
+        },
+        "attr:pedestrian.sitting_lying_down": {
+          "images": 1387,
+          "boxes": 2993,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "pedestrian": 2993
+          }
+        },
+        "attr:pedestrian.standing": {
+          "images": 3965,
+          "boxes": 9208,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "pedestrian": 9208
+          }
+        },
+        "attr:vehicle.moving": {
+          "images": 8453,
+          "boxes": 22311,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 18369,
+            "bus": 1067,
+            "truck": 2875
+          }
+        },
+        "attr:vehicle.parked": {
+          "images": 6805,
+          "boxes": 29869,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 26190,
+            "truck": 3423,
+            "bus": 256
+          }
+        },
+        "attr:vehicle.stopped": {
+          "images": 2141,
+          "boxes": 4750,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 3792,
+            "truck": 722,
+            "bus": 236
+          }
+        },
+        "bright:bright": {
+          "images": 14959,
+          "boxes": 125869,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "bicycle": 3295,
+            "car": 47045,
+            "pedestrian": 31669,
+            "motorcycle": 3220,
+            "barrier": 15903,
+            "truck": 6907,
+            "traffic_cone": 16295,
+            "bus": 1535
+          }
+        },
+        "bright:dark": {
+          "images": 1041,
+          "boxes": 2884,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 1311,
+            "traffic_cone": 392,
+            "pedestrian": 365,
+            "motorcycle": 19,
+            "truck": 113,
+            "barrier": 636,
+            "bicycle": 19,
+            "bus": 29
+          }
+        },
+        "cam:CAM_BACK": {
+          "images": 2950,
+          "boxes": 32900,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 14152,
+            "pedestrian": 6588,
+            "motorcycle": 757,
+            "traffic_cone": 3932,
+            "bicycle": 500,
+            "truck": 1925,
+            "bus": 455,
+            "barrier": 4591
+          }
+        },
+        "cam:CAM_BACK_LEFT": {
+          "images": 2569,
+          "boxes": 14949,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "pedestrian": 4411,
+            "car": 5334,
+            "traffic_cone": 1926,
+            "motorcycle": 402,
+            "bus": 128,
+            "bicycle": 677,
+            "truck": 639,
+            "barrier": 1432
+          }
+        },
+        "cam:CAM_BACK_RIGHT": {
+          "images": 2255,
+          "boxes": 13357,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 5120,
+            "bicycle": 424,
+            "pedestrian": 3438,
+            "motorcycle": 412,
+            "truck": 715,
+            "barrier": 1630,
+            "traffic_cone": 1493,
+            "bus": 125
+          }
+        },
+        "cam:CAM_FRONT": {
+          "images": 3102,
+          "boxes": 36073,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "barrier": 4926,
+            "car": 13105,
+            "truck": 2261,
+            "pedestrian": 8933,
+            "motorcycle": 780,
+            "traffic_cone": 4930,
+            "bus": 549,
+            "bicycle": 589
+          }
+        },
+        "cam:CAM_FRONT_LEFT": {
+          "images": 2549,
+          "boxes": 15383,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "bicycle": 617,
+            "traffic_cone": 2314,
+            "motorcycle": 371,
+            "car": 5386,
+            "pedestrian": 4247,
+            "truck": 712,
+            "bus": 125,
+            "barrier": 1611
+          }
+        },
+        "cam:CAM_FRONT_RIGHT": {
+          "images": 2575,
+          "boxes": 16091,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 5259,
+            "pedestrian": 4417,
+            "traffic_cone": 2092,
+            "bicycle": 507,
+            "barrier": 2349,
+            "truck": 768,
+            "motorcycle": 517,
+            "bus": 182
+          }
+        },
+        "edge:touches_border": {
+          "images": 6969,
+          "boxes": 10567,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "truck": 951,
+            "car": 5417,
+            "bus": 251,
+            "pedestrian": 790,
+            "motorcycle": 448,
+            "barrier": 1664,
+            "bicycle": 387,
+            "traffic_cone": 659
+          }
+        },
+        "loc:boston-seaport": {
+          "images": 3999,
+          "boxes": 41811,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 20529,
+            "barrier": 3415,
+            "truck": 3193,
+            "pedestrian": 7137,
+            "traffic_cone": 6296,
+            "bus": 503,
+            "motorcycle": 265,
+            "bicycle": 473
+          }
+        },
+        "loc:singapore-onenorth": {
+          "images": 11773,
+          "boxes": 85516,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "bicycle": 2810,
+            "car": 27199,
+            "pedestrian": 24474,
+            "motorcycle": 2824,
+            "traffic_cone": 10339,
+            "truck": 3754,
+            "barrier": 13093,
+            "bus": 1023
+          }
+        },
+        "loc:singapore-queenstown": {
+          "images": 228,
+          "boxes": 1426,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "motorcycle": 150,
+            "truck": 73,
+            "car": 628,
+            "pedestrian": 423,
+            "bus": 38,
+            "bicycle": 31,
+            "traffic_cone": 52,
+            "barrier": 31
+          }
+        },
+        "size:large": {
+          "images": 10099,
+          "boxes": 29484,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 14558,
+            "truck": 2934,
+            "barrier": 4151,
+            "bus": 622,
+            "motorcycle": 1120,
+            "pedestrian": 3629,
+            "bicycle": 1056,
+            "traffic_cone": 1414
+          }
+        },
+        "size:medium": {
+          "images": 12159,
+          "boxes": 62242,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "bicycle": 2051,
+            "car": 24904,
+            "pedestrian": 16333,
+            "motorcycle": 1635,
+            "barrier": 7015,
+            "truck": 3341,
+            "traffic_cone": 6241,
+            "bus": 722
+          }
+        },
+        "size:small": {
+          "images": 7982,
+          "boxes": 37027,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 8894,
+            "pedestrian": 12072,
+            "traffic_cone": 9032,
+            "motorcycle": 484,
+            "barrier": 5373,
+            "bicycle": 207,
+            "truck": 745,
+            "bus": 220
+          }
+        }
+      }
+    },
+    "val": {
+      "images": 16445,
+      "boxes": 131676,
+      "slices": {
+        "attr:cycle.with_rider": {
+          "images": 1278,
+          "boxes": 1394,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "motorcycle": 1161,
+            "bicycle": 233
+          }
+        },
+        "attr:cycle.without_rider": {
+          "images": 3296,
+          "boxes": 5048,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "bicycle": 3114,
+            "motorcycle": 1934
+          }
+        },
+        "attr:pedestrian.moving": {
+          "images": 6567,
+          "boxes": 19571,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "pedestrian": 19571
+          }
+        },
+        "attr:pedestrian.sitting_lying_down": {
+          "images": 1389,
+          "boxes": 3205,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "pedestrian": 3205
+          }
+        },
+        "attr:pedestrian.standing": {
+          "images": 4066,
+          "boxes": 9406,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "pedestrian": 9406
+          }
+        },
+        "attr:vehicle.moving": {
+          "images": 8665,
+          "boxes": 22383,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 18269,
+            "bus": 1242,
+            "truck": 2872
+          }
+        },
+        "attr:vehicle.parked": {
+          "images": 6691,
+          "boxes": 28715,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 25152,
+            "truck": 3220,
+            "bus": 343
+          }
+        },
+        "attr:vehicle.stopped": {
+          "images": 2244,
+          "boxes": 4921,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 3855,
+            "truck": 766,
+            "bus": 300
+          }
+        },
+        "bright:bright": {
+          "images": 16249,
+          "boxes": 131171,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 47004,
+            "truck": 6849,
+            "bus": 1878,
+            "bicycle": 3347,
+            "pedestrian": 32068,
+            "traffic_cone": 18550,
+            "motorcycle": 3083,
+            "barrier": 18392
+          }
+        },
+        "bright:dark": {
+          "images": 196,
+          "boxes": 505,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 275,
+            "pedestrian": 117,
+            "traffic_cone": 37,
+            "motorcycle": 14,
+            "bus": 7,
+            "barrier": 41,
+            "bicycle": 5,
+            "truck": 9
+          }
+        },
+        "cam:CAM_BACK": {
+          "images": 3009,
+          "boxes": 33789,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 13719,
+            "truck": 1850,
+            "pedestrian": 6686,
+            "traffic_cone": 4469,
+            "bicycle": 487,
+            "bus": 510,
+            "motorcycle": 692,
+            "barrier": 5376
+          }
+        },
+        "cam:CAM_BACK_LEFT": {
+          "images": 2643,
+          "boxes": 14970,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "pedestrian": 4328,
+            "truck": 631,
+            "car": 5482,
+            "traffic_cone": 2165,
+            "bicycle": 641,
+            "motorcycle": 385,
+            "barrier": 1198,
+            "bus": 140
+          }
+        },
+        "cam:CAM_BACK_RIGHT": {
+          "images": 2356,
+          "boxes": 13607,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "bus": 153,
+            "motorcycle": 358,
+            "car": 4791,
+            "pedestrian": 3486,
+            "bicycle": 442,
+            "barrier": 1858,
+            "truck": 635,
+            "traffic_cone": 1884
+          }
+        },
+        "cam:CAM_FRONT": {
+          "images": 3249,
+          "boxes": 37462,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 12784,
+            "truck": 2351,
+            "bicycle": 611,
+            "motorcycle": 806,
+            "pedestrian": 8832,
+            "bus": 737,
+            "traffic_cone": 5507,
+            "barrier": 5834
+          }
+        },
+        "cam:CAM_FRONT_LEFT": {
+          "images": 2637,
+          "boxes": 15834,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 5327,
+            "pedestrian": 4439,
+            "traffic_cone": 2469,
+            "barrier": 1703,
+            "truck": 702,
+            "bicycle": 653,
+            "motorcycle": 381,
+            "bus": 160
+          }
+        },
+        "cam:CAM_FRONT_RIGHT": {
+          "images": 2551,
+          "boxes": 16014,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "bicycle": 518,
+            "pedestrian": 4414,
+            "car": 5176,
+            "traffic_cone": 2093,
+            "truck": 689,
+            "barrier": 2464,
+            "bus": 185,
+            "motorcycle": 475
+          }
+        },
+        "edge:touches_border": {
+          "images": 6809,
+          "boxes": 10420,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 5223,
+            "truck": 971,
+            "traffic_cone": 655,
+            "bicycle": 354,
+            "barrier": 1796,
+            "pedestrian": 737,
+            "motorcycle": 402,
+            "bus": 282
+          }
+        },
+        "loc:boston-seaport": {
+          "images": 3051,
+          "boxes": 38943,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 18485,
+            "truck": 2528,
+            "pedestrian": 7597,
+            "traffic_cone": 6425,
+            "bicycle": 419,
+            "barrier": 2685,
+            "bus": 532,
+            "motorcycle": 272
+          }
+        },
+        "loc:singapore-onenorth": {
+          "images": 13394,
+          "boxes": 92733,
+          "kind": "native",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 28794,
+            "truck": 4330,
+            "bus": 1353,
+            "bicycle": 2933,
+            "motorcycle": 2825,
+            "pedestrian": 24588,
+            "traffic_cone": 12162,
+            "barrier": 15748
+          }
+        },
+        "size:large": {
+          "images": 10034,
+          "boxes": 28802,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "truck": 2824,
+            "car": 14045,
+            "traffic_cone": 1409,
+            "pedestrian": 3242,
+            "barrier": 4494,
+            "bicycle": 1004,
+            "bus": 738,
+            "motorcycle": 1046
+          }
+        },
+        "size:medium": {
+          "images": 12411,
+          "boxes": 63429,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 24451,
+            "truck": 3263,
+            "bus": 907,
+            "bicycle": 2062,
+            "pedestrian": 16457,
+            "traffic_cone": 6784,
+            "motorcycle": 1586,
+            "barrier": 7919
+          }
+        },
+        "size:small": {
+          "images": 8253,
+          "boxes": 39445,
+          "kind": "derived",
+          "sufficient_for_claims": true,
+          "boxes_per_class": {
+            "car": 8783,
+            "pedestrian": 12486,
+            "traffic_cone": 10394,
+            "bus": 240,
+            "motorcycle": 465,
+            "truck": 771,
+            "barrier": 6020,
+            "bicycle": 286
+          }
+        }
+      }
+    }
+  }
+}

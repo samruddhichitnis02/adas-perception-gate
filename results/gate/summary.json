@@ -1,0 +1,132 @@
+{
+  "config": {
+    "bootstrap": {
+      "n_resamples": 200,
+      "min_conf_for_ap": 0.01,
+      "ci_level": 0.95,
+      "seed": 0
+    },
+    "fail_on_warn": false,
+    "overall": {
+      "metric": "mAP50-95",
+      "max_drop": 0.0,
+      "also_check": [
+        "mAP50"
+      ]
+    },
+    "slices": {
+      "metric": "mAP50",
+      "max_drop": 0.03,
+      "min_gt_boxes": 100
+    },
+    "errors": {
+      "max_growth_per_100_gt": {
+        "classification_error": 0.5,
+        "localization_error": 0.5,
+        "duplicate": 0.5,
+        "background_fp": 1.0,
+        "missed": 1.0
+      }
+    }
+  },
+  "results": [
+    {
+      "candidate": "baseline_s1",
+      "baseline": "baseline_s0",
+      "verdict": "PASS",
+      "n_fail": 0,
+      "n_warn": 0,
+      "n_checks": 29,
+      "reasons": []
+    },
+    {
+      "candidate": "strong_aug_s0",
+      "baseline": "baseline_s0",
+      "verdict": "FAIL",
+      "n_fail": 3,
+      "n_warn": 3,
+      "n_checks": 29,
+      "reasons": [
+        "FAIL: overall:mAP50-95 delta=-0.0234 (95% CI -0.0254..-0.0215, threshold 0)",
+        "FAIL: overall:mAP50 delta=-0.0243 (95% CI -0.0274..-0.0220, threshold 0)",
+        "FAIL: error:missed delta=+2.0383 (95% CI +1.8631..+2.1681, threshold +1)",
+        "WARN: slice:attr:cycle.with_rider delta=-0.0396 (95% CI -0.0546..-0.0198, threshold -0.03)",
+        "WARN: slice:bright:dark delta=-0.0479 (95% CI -0.1043..-0.0108, threshold -0.03)",
+        "WARN: slice:cam:CAM_BACK_RIGHT delta=-0.0319 (95% CI -0.0410..-0.0240, threshold -0.03)"
+      ]
+    },
+    {
+      "candidate": "strong_aug_s1",
+      "baseline": "baseline_s0",
+      "verdict": "FAIL",
+      "n_fail": 3,
+      "n_warn": 2,
+      "n_checks": 29,
+      "reasons": [
+        "FAIL: overall:mAP50-95 delta=-0.0236 (95% CI -0.0256..-0.0219, threshold 0)",
+        "FAIL: overall:mAP50 delta=-0.0227 (95% CI -0.0256..-0.0201, threshold 0)",
+        "FAIL: error:missed delta=+1.3207 (95% CI +1.1548..+1.4811, threshold +1)",
+        "WARN: slice:attr:cycle.with_rider delta=-0.0396 (95% CI -0.0644..-0.0149, threshold -0.03)",
+        "WARN: slice:bright:dark delta=-0.0359 (95% CI -0.0873..+0.0135, threshold -0.03)"
+      ]
+    },
+    {
+      "candidate": "hires_s0",
+      "baseline": "baseline_s0",
+      "verdict": "PASS",
+      "n_fail": 0,
+      "n_warn": 0,
+      "n_checks": 29,
+      "reasons": []
+    },
+    {
+      "candidate": "hires_s1",
+      "baseline": "baseline_s0",
+      "verdict": "FAIL",
+      "n_fail": 1,
+      "n_warn": 0,
+      "n_checks": 29,
+      "reasons": [
+        "FAIL: error:background_fp delta=+1.4824 (95% CI +1.3206..+1.6513, threshold +1)"
+      ]
+    },
+    {
+      "candidate": "degraded_s0",
+      "baseline": "baseline_s0",
+      "verdict": "FAIL",
+      "n_fail": 27,
+      "n_warn": 1,
+      "n_checks": 29,
+      "reasons": [
+        "FAIL: overall:mAP50-95 delta=-0.2075 (95% CI -0.2114..-0.2041, threshold 0)",
+        "FAIL: overall:mAP50 delta=-0.2805 (95% CI -0.2855..-0.2759, threshold 0)",
+        "FAIL: slice:attr:cycle.with_rider delta=-0.1584 (95% CI -0.1931..-0.1286, threshold -0.03)",
+        "FAIL: slice:attr:cycle.without_rider delta=-0.2030 (95% CI -0.2178..-0.1881, threshold -0.03)",
+        "FAIL: slice:attr:pedestrian.moving delta=-0.1683 (95% CI -0.1782..-0.1584, threshold -0.03)",
+        "FAIL: slice:attr:pedestrian.sitting_lying_down delta=-0.2178 (95% CI -0.2376..-0.1881, threshold -0.03)",
+        "FAIL: slice:attr:pedestrian.standing delta=-0.1683 (95% CI -0.1782..-0.1584, threshold -0.03)",
+        "FAIL: slice:attr:vehicle.moving delta=-0.2541 (95% CI -0.2673..-0.2442, threshold -0.03)",
+        "FAIL: slice:attr:vehicle.parked delta=-0.2409 (95% CI -0.2673..-0.2211, threshold -0.03)",
+        "FAIL: slice:attr:vehicle.stopped delta=-0.2541 (95% CI -0.2772..-0.2343, threshold -0.03)",
+        "FAIL: slice:bright:bright delta=-0.2802 (95% CI -0.2859..-0.2760, threshold -0.03)",
+        "FAIL: slice:bright:dark delta=-0.2264 (95% CI -0.3105..-0.1646, threshold -0.03)",
+        "FAIL: slice:cam:CAM_BACK delta=-0.2695 (95% CI -0.2795..-0.2598, threshold -0.03)",
+        "FAIL: slice:cam:CAM_BACK_LEFT delta=-0.2723 (95% CI -0.2887..-0.2576, threshold -0.03)",
+        "FAIL: slice:cam:CAM_BACK_RIGHT delta=-0.2793 (95% CI -0.2929..-0.2656, threshold -0.03)",
+        "FAIL: slice:cam:CAM_FRONT delta=-0.2820 (95% CI -0.2910..-0.2739, threshold -0.03)",
+        "FAIL: slice:cam:CAM_FRONT_LEFT delta=-0.2826 (95% CI -0.2979..-0.2674, threshold -0.03)",
+        "FAIL: slice:cam:CAM_FRONT_RIGHT delta=-0.2866 (95% CI -0.2977..-0.2710, threshold -0.03)",
+        "FAIL: slice:edge:touches_border delta=-0.3289 (95% CI -0.3400..-0.3151, threshold -0.03)",
+        "FAIL: slice:loc:boston-seaport delta=-0.2382 (95% CI -0.2501..-0.2275, threshold -0.03)",
+        "FAIL: slice:loc:singapore-onenorth delta=-0.2935 (95% CI -0.2999..-0.2879, threshold -0.03)",
+        "FAIL: slice:size:large delta=-0.2861 (95% CI -0.2954..-0.2797, threshold -0.03)",
+        "FAIL: slice:size:medium delta=-0.2539 (95% CI -0.2593..-0.2477, threshold -0.03)",
+        "FAIL: slice:size:small delta=-0.1853 (95% CI -0.1964..-0.1766, threshold -0.03)",
+        "FAIL: error:classification_error delta=+1.0146 (95% CI +0.9064..+1.1299, threshold +0.5)",
+        "FAIL: error:background_fp delta=+1.5576 (95% CI +1.3164..+1.7589, threshold +1)",
+        "FAIL: error:missed delta=+21.3752 (95% CI +21.0433..+21.6588, threshold +1)",
+        "WARN: error:localization_error delta=+0.6349 (95% CI +0.4226..+0.8544, threshold +0.5)"
+      ]
+    }
+  ]
+}

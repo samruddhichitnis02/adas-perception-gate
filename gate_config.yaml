@@ -1,0 +1,37 @@
+# Validation gate thresholds. All "drop"/"growth" numbers are ABSOLUTE differences (candidate - baseline).
+# AP numbers are on a 0..1 scale (0.03 = 3 AP points). Error rates are per 100 ground-truth boxes.
+
+bootstrap:
+  n_resamples: 200          # paired bootstrap over images (same resample for baseline and candidate)
+  min_conf_for_ap: 0.01     # gate computes AP on predictions with conf >= this (speed). Measured cost vs the
+                            # full 0.001 floor: -0.0016 mAP50-95 (baseline), -0.0008 (degraded). Applied equally
+                            # to baseline and candidate, so comparisons stay fair.
+  ci_level: 0.95
+  seed: 0
+
+# Decision rule for every check:
+#   FAIL  if the one-sided CI bound shows the regression is confidently worse than the threshold
+#   WARN  if the point estimate is worse than the threshold but the CI still includes "no regression"
+#         (inconclusive: noise cannot be ruled out). WARN does not fail the gate unless fail_on_warn is true.
+fail_on_warn: false
+
+overall:
+  metric: "mAP50-95"        # must not drop (tolerance 0 = any confident drop fails)
+  max_drop: 0.0
+  also_check: ["mAP50"]     # same rule applied to these
+
+slices:
+  metric: "mAP50"
+  max_drop: 0.03            # no slice mAP50 may drop by more than 3 AP points
+  min_gt_boxes: 100         # only gate slices with at least this many GT boxes (stricter than the 30-box floor)
+  # Slices with fewer boxes than min_gt_boxes (but >= 30) are still reported, never gated.
+  # Slices whose AP counts no unmatched predictions (attr:*) measure recall-weighted AP; see README.
+
+errors:
+  # max allowed increase in each error type, per 100 GT boxes, at the taxonomy operating point
+  max_growth_per_100_gt:
+    classification_error: 0.5
+    localization_error: 0.5
+    duplicate: 0.5
+    background_fp: 1.0
+    missed: 1.0

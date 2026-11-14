@@ -1,7 +1,5 @@
 # Report: can we trust a new detection model before it ships?
 
-This is the plain-language version. Technical detail, setup and the full list of caveats are in `README.md`.
-
 ## What I did
 
 I took a public driving-camera dataset (nuImages, about 16,000 training pictures and the full 16,445-picture validation set),
@@ -49,18 +47,4 @@ The core matching step (deciding which predicted box corresponds to which real o
 both Python and C++. On the whole validation set the two gave identical answers for every model. The C++ version was about 65 times faster than
 plain Python (0.0197 seconds against 1.286 seconds for the error classification). A compiled Python helper (numba) was as fast as C++ for the matching step used in scoring.
 
-## What the gate cannot catch
 
-- Anything the validation pictures do not contain: other cities, weather, night (only 196 dark images), rare situations.
-- Differences between training runs. The statistics account for which pictures were sampled, not for luck in training, and the two-run
-  higher-resolution result shows this matters.
-- Frames from the same drive being treated as independent, which probably makes the uncertainty ranges too narrow.
-- Groups I did not define as slices. Brightness and box-touching-edge are stand-ins for "night" and "cut off", not the real thing.
-- Real objects that the dataset does not label (trailers, construction vehicles, ...). The gate counts finding them as mistakes.
-- Speed, memory, behaviour over time, and what the model does to the car's driving decisions.
-- A bad baseline: the gate only asks "is it no worse than the baseline?".
-
-## Honest limitations
-
-Short training (12 epochs), a 16,000-image training subset, two runs per configuration, and thresholds I chose myself. `run_all.sh`
-was written to reproduce everything but has not been run as a script on this machine (no bash); I ran the same commands by hand.

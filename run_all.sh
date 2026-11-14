@@ -40,4 +40,5 @@ $PY src/run_gates.py
 
 echo "== 6. summary + verification =="
 $PY src/summarize.py
+$PY src/make_visuals.py
 $PY verify_claims.py

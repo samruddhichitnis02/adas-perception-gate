@@ -1,0 +1,337 @@
+{
+  "run": "degraded_s0",
+  "operating_point": {
+    "conf": 0.25,
+    "tp_iou": 0.5,
+    "loc_iou": 0.1
+  },
+  "overall_miss_rate": 0.6062456332209363,
+  "n_gt": 131676,
+  "n_missed": 79828,
+  "missed_gt_patterns": [
+    {
+      "tags": [
+        "size:small"
+      ],
+      "class": null,
+      "n_gt": 39445,
+      "missed": 34400,
+      "miss_rate": 0.872100392952212,
+      "overall_miss_rate": 0.6062456332209363,
+      "excess_missed": 10486.640997600167,
+      "missed_with_wrong_class_pred": 402,
+      "missed_with_poorly_localized_pred": 1915,
+      "missed_with_no_nearby_pred": 32083,
+      "figure": "figures/degraded_s0/pattern_01_size-small.jpg",
+      "description": "small objects (<32^2 px): 34400/39445 GT boxes missed (87.2% vs 60.6% overall)",
+      "derived_tags_are_proxies": true
+    },
+    {
+      "tags": [
+        "size:medium"
+      ],
+      "class": "barrier",
+      "n_gt": 7919,
+      "missed": 6871,
+      "miss_rate": 0.8676600580881424,
+      "overall_miss_rate": 0.6062456332209363,
+      "excess_missed": 2070.1408305234054,
+      "missed_with_wrong_class_pred": 91,
+      "missed_with_poorly_localized_pred": 92,
+      "missed_with_no_nearby_pred": 6688,
+      "figure": "figures/degraded_s0/pattern_02_size-medium_barrier.jpg",
+      "description": "barrier medium objects: 6871/7919 GT boxes missed (86.8% vs 60.6% overall)",
+      "derived_tags_are_proxies": true
+    },
+    {
+      "tags": [
+        "cam:CAM_FRONT"
+      ],
+      "class": null,
+      "n_gt": 37462,
+      "missed": 24339,
+      "miss_rate": 0.6496983610058192,
+      "overall_miss_rate": 0.6062456332209363,
+      "excess_missed": 1627.8260882772847,
+      "missed_with_wrong_class_pred": 1286,
+      "missed_with_poorly_localized_pred": 1493,
+      "missed_with_no_nearby_pred": 21560,
+      "figure": "figures/degraded_s0/pattern_03_cam-CAM_FRONT.jpg",
+      "description": "cam:CAM_FRONT: 24339/37462 GT boxes missed (65.0% vs 60.6% overall)",
+      "derived_tags_are_proxies": false
+    },
+    {
+      "tags": [
+        "size:medium"
+      ],
+      "class": "truck",
+      "n_gt": 3263,
+      "missed": 2989,
+      "miss_rate": 0.9160281949126571,
+      "overall_miss_rate": 0.6062456332209363,
+      "excess_missed": 1010.820498800085,
+      "missed_with_wrong_class_pred": 926,
+      "missed_with_poorly_localized_pred": 14,
+      "missed_with_no_nearby_pred": 2049,
+      "figure": "figures/degraded_s0/pattern_04_size-medium_truck.jpg",
+      "description": "truck medium objects: 2989/3263 GT boxes missed (91.6% vs 60.6% overall)",
+      "derived_tags_are_proxies": true
+    },
+    {
+      "tags": [
+        "cam:CAM_BACK"
+      ],
+      "class": "pedestrian",
+      "n_gt": 6686,
+      "missed": 5041,
+      "miss_rate": 0.753963505833084,
+      "overall_miss_rate": 0.6062456332209363,
+      "excess_missed": 987.6416962848202,
+      "missed_with_wrong_class_pred": 28,
+      "missed_with_poorly_localized_pred": 175,
+      "missed_with_no_nearby_pred": 4838,
+      "figure": "figures/degraded_s0/pattern_05_cam-CAM_BACK_pedestrian.jpg",
+      "description": "pedestrian cam:CAM_BACK: 5041/6686 GT boxes missed (75.4% vs 60.6% overall)",
+      "derived_tags_are_proxies": false
+    },
+    {
+      "tags": [
+        "attr:pedestrian.standing"
+      ],
+      "class": null,
+      "n_gt": 9406,
+      "missed": 6666,
+      "miss_rate": 0.7086965766532001,
+      "overall_miss_rate": 0.6062456332209363,
+      "excess_missed": 963.6535739238734,
+      "missed_with_wrong_class_pred": 24,
+      "missed_with_poorly_localized_pred": 238,
+      "missed_with_no_nearby_pred": 6404,
+      "description": "attr:pedestrian.standing: 6666/9406 GT boxes missed (70.9% vs 60.6% overall)",
+      "derived_tags_are_proxies": false
+    },
+    {
+      "tags": [
+        "loc:boston-seaport"
+      ],
+      "class": "truck",
+      "n_gt": 2528,
+      "missed": 2292,
+      "miss_rate": 0.9066455696202531,
+      "overall_miss_rate": 0.6062456332209363,
+      "excess_missed": 759.411039217473,
+      "missed_with_wrong_class_pred": 848,
+      "missed_with_poorly_localized_pred": 21,
+      "missed_with_no_nearby_pred": 1423,
+      "description": "truck loc:boston-seaport: 2292/2528 GT boxes missed (90.7% vs 60.6% overall)",
+      "derived_tags_are_proxies": false
+    },
+    {
+      "tags": [
+        "attr:pedestrian.sitting_lying_down"
+      ],
+      "class": null,
+      "n_gt": 3205,
+      "missed": 2645,
+      "miss_rate": 0.8252730109204368,
+      "overall_miss_rate": 0.6062456332209363,
+      "excess_missed": 701.9827455268992,
+      "missed_with_wrong_class_pred": 71,
+      "missed_with_poorly_localized_pred": 86,
+      "missed_with_no_nearby_pred": 2488,
+      "description": "attr:pedestrian.sitting_lying_down: 2645/3205 GT boxes missed (82.5% vs 60.6% overall)",
+      "derived_tags_are_proxies": false
+    }
+  ],
+  "false_positive_patterns": {
+    "classification_error": [
+      {
+        "slice": "size:large",
+        "class": null,
+        "n_pred": 27951,
+        "count": 2197,
+        "rate": 0.07860183893241744,
+        "overall_rate": 0.061081914987018524,
+        "excess": 489.6993941978453
+      },
+      {
+        "slice": "bright:bright",
+        "class": "truck",
+        "n_pred": 1877,
+        "count": 540,
+        "rate": 0.2876931273308471,
+        "overall_rate": 0.061081914987018524,
+        "excess": 425.34924556936625
+      },
+      {
+        "slice": "cam:CAM_FRONT",
+        "class": null,
+        "n_pred": 20311,
+        "count": 1625,
+        "rate": 0.08000590812860027,
+        "overall_rate": 0.061081914987018524,
+        "excess": 384.3652246986667
+      },
+      {
+        "slice": "cam:CAM_FRONT",
+        "class": "car",
+        "n_pred": 11539,
+        "count": 1016,
+        "rate": 0.08804922436952942,
+        "overall_rate": 0.061081914987018524,
+        "excess": 311.17578296479326
+      },
+      {
+        "slice": "bright:bright",
+        "class": "car",
+        "n_pred": 42600,
+        "count": 2897,
+        "rate": 0.06800469483568075,
+        "overall_rate": 0.061081914987018524,
+        "excess": 294.910421553011
+      }
+    ],
+    "localization_error": [
+      {
+        "slice": "size:medium",
+        "class": "car",
+        "n_pred": 23269,
+        "count": 4031,
+        "rate": 0.17323477588207487,
+        "overall_rate": 0.11593021359856515,
+        "excess": 1333.4198597749878
+      },
+      {
+        "slice": "bright:bright",
+        "class": "car",
+        "n_pred": 42600,
+        "count": 5858,
+        "rate": 0.1375117370892019,
+        "overall_rate": 0.11593021359856515,
+        "excess": 919.3729007011252
+      },
+      {
+        "slice": "loc:boston-seaport",
+        "class": "car",
+        "n_pred": 16194,
+        "count": 2606,
+        "rate": 0.16092379893787823,
+        "overall_rate": 0.11593021359856515,
+        "excess": 728.626120984836
+      },
+      {
+        "slice": "loc:boston-seaport",
+        "class": null,
+        "n_pred": 24737,
+        "count": 3513,
+        "rate": 0.1420139871447629,
+        "overall_rate": 0.11593021359856515,
+        "excess": 645.2343062122941
+      },
+      {
+        "slice": "size:medium",
+        "class": null,
+        "n_pred": 43829,
+        "count": 5682,
+        "rate": 0.1296401925665655,
+        "overall_rate": 0.11593021359856515,
+        "excess": 600.8946681884881
+      }
+    ],
+    "duplicate": [
+      {
+        "slice": "bright:bright",
+        "class": "car",
+        "n_pred": 42600,
+        "count": 2024,
+        "rate": 0.04751173708920188,
+        "overall_rate": 0.03710067854858332,
+        "excess": 443.51109383035055
+      },
+      {
+        "slice": "loc:boston-seaport",
+        "class": "car",
+        "n_pred": 16194,
+        "count": 929,
+        "rate": 0.05736692602198345,
+        "overall_rate": 0.03710067854858332,
+        "excess": 328.1916115842416
+      },
+      {
+        "slice": "size:medium",
+        "class": "car",
+        "n_pred": 23269,
+        "count": 1187,
+        "rate": 0.05101207615282135,
+        "overall_rate": 0.03710067854858332,
+        "excess": 323.7043108530147
+      },
+      {
+        "slice": "loc:boston-seaport",
+        "class": null,
+        "n_pred": 24737,
+        "count": 1171,
+        "rate": 0.04733799571492097,
+        "overall_rate": 0.03710067854858332,
+        "excess": 253.24051474369435
+      },
+      {
+        "slice": "size:large",
+        "class": null,
+        "n_pred": 27951,
+        "count": 1252,
+        "rate": 0.04479267289184644,
+        "overall_rate": 0.03710067854858332,
+        "excess": 214.99893388854753
+      }
+    ],
+    "background_fp": [
+      {
+        "slice": "bright:bright",
+        "class": "bicycle",
+        "n_pred": 5012,
+        "count": 2621,
+        "rate": 0.5229449321628092,
+        "overall_rate": 0.13558429178843331,
+        "excess": 1941.4515295563722
+      },
+      {
+        "slice": "loc:singapore-onenorth",
+        "class": "bicycle",
+        "n_pred": 4452,
+        "count": 2287,
+        "rate": 0.5137017070979335,
+        "overall_rate": 0.13558429178843331,
+        "excess": 1683.378732957895
+      },
+      {
+        "slice": "size:medium",
+        "class": "bicycle",
+        "n_pred": 2949,
+        "count": 1745,
+        "rate": 0.591726008816548,
+        "overall_rate": 0.13558429178843331,
+        "excess": 1345.16192351591
+      },
+      {
+        "slice": "loc:singapore-onenorth",
+        "class": null,
+        "n_pred": 54992,
+        "count": 8079,
+        "rate": 0.14691227814954902,
+        "overall_rate": 0.13558429178843331,
+        "excess": 622.9486259704754
+      },
+      {
+        "slice": "size:large",
+        "class": "bicycle",
+        "n_pred": 2068,
+        "count": 876,
+        "rate": 0.42359767891682787,
+        "overall_rate": 0.13558429178843331,
+        "excess": 595.61168458152
+      }
+    ]
+  },
+  "min_support": 100
+}

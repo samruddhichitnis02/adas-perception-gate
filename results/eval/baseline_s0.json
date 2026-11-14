@@ -1,0 +1,224 @@
+{
+  "run": "baseline_s0",
+  "n_predictions": 1477818,
+  "iou_thresholds": [
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8,
+    0.85,
+    0.9,
+    0.95
+  ],
+  "overall": {
+    "mAP50": 0.6093792752174978,
+    "mAP50-95": 0.3782993202737036
+  },
+  "per_class": {
+    "car": {
+      "AP50": 0.7723071756796228,
+      "AP50-95": 0.5173268074331012,
+      "n_gt": 47279
+    },
+    "truck": {
+      "AP50": 0.4722498010256451,
+      "AP50-95": 0.3223089122119484,
+      "n_gt": 6858
+    },
+    "bus": {
+      "AP50": 0.42363506873942786,
+      "AP50-95": 0.31121810482516155,
+      "n_gt": 1885
+    },
+    "motorcycle": {
+      "AP50": 0.690552626136745,
+      "AP50-95": 0.42956426805077264,
+      "n_gt": 3097
+    },
+    "bicycle": {
+      "AP50": 0.6011285571108642,
+      "AP50-95": 0.3757493257868301,
+      "n_gt": 3352
+    },
+    "pedestrian": {
+      "AP50": 0.5891150120531501,
+      "AP50-95": 0.3065572728342637,
+      "n_gt": 32185
+    },
+    "traffic_cone": {
+      "AP50": 0.6940655344116967,
+      "AP50-95": 0.38173078397254834,
+      "n_gt": 18587
+    },
+    "barrier": {
+      "AP50": 0.6319804265828304,
+      "AP50-95": 0.38193908707500335,
+      "n_gt": 18433
+    }
+  },
+  "per_slice": {
+    "attr:cycle.with_rider": {
+      "mAP50": 0.7277227722772277,
+      "mAP50-95": 0.5123762376237624,
+      "n_gt": 1394,
+      "kind": "native",
+      "fp_counted": false
+    },
+    "attr:cycle.without_rider": {
+      "mAP50": 0.8267326732673268,
+      "mAP50-95": 0.5039603960396041,
+      "n_gt": 5048,
+      "kind": "native",
+      "fp_counted": false
+    },
+    "attr:pedestrian.moving": {
+      "mAP50": 0.7722772277227723,
+      "mAP50-95": 0.43168316831683173,
+      "n_gt": 19571,
+      "kind": "native",
+      "fp_counted": false
+    },
+    "attr:pedestrian.sitting_lying_down": {
+      "mAP50": 0.7128712871287128,
+      "mAP50-95": 0.33663366336633666,
+      "n_gt": 3205,
+      "kind": "native",
+      "fp_counted": false
+    },
+    "attr:pedestrian.standing": {
+      "mAP50": 0.7326732673267327,
+      "mAP50-95": 0.3891089108910891,
+      "n_gt": 9406,
+      "kind": "native",
+      "fp_counted": false
+    },
+    "attr:vehicle.moving": {
+      "mAP50": 0.7194719471947195,
+      "mAP50-95": 0.5141914191419142,
+      "n_gt": 22383,
+      "kind": "native",
+      "fp_counted": false
+    },
+    "attr:vehicle.parked": {
+      "mAP50": 0.6996699669966997,
+      "mAP50-95": 0.4501650165016502,
+      "n_gt": 28715,
+      "kind": "native",
+      "fp_counted": false
+    },
+    "attr:vehicle.stopped": {
+      "mAP50": 0.7491749174917492,
+      "mAP50-95": 0.5221122112211222,
+      "n_gt": 4921,
+      "kind": "native",
+      "fp_counted": false
+    },
+    "bright:bright": {
+      "mAP50": 0.6098614507512526,
+      "mAP50-95": 0.37856120492665457,
+      "n_gt": 131171,
+      "kind": "derived",
+      "fp_counted": true
+    },
+    "bright:dark": {
+      "mAP50": 0.4814561753511887,
+      "mAP50-95": 0.33169927304175284,
+      "n_gt": 505,
+      "kind": "derived",
+      "fp_counted": true
+    },
+    "cam:CAM_BACK": {
+      "mAP50": 0.6112648265492248,
+      "mAP50-95": 0.37424966844151175,
+      "n_gt": 33789,
+      "kind": "native",
+      "fp_counted": true
+    },
+    "cam:CAM_BACK_LEFT": {
+      "mAP50": 0.6064414583770514,
+      "mAP50-95": 0.39048556662174716,
+      "n_gt": 14970,
+      "kind": "native",
+      "fp_counted": true
+    },
+    "cam:CAM_BACK_RIGHT": {
+      "mAP50": 0.6280827119311078,
+      "mAP50-95": 0.40792820674752195,
+      "n_gt": 13607,
+      "kind": "native",
+      "fp_counted": true
+    },
+    "cam:CAM_FRONT": {
+      "mAP50": 0.5780539683079486,
+      "mAP50-95": 0.34181178991456657,
+      "n_gt": 37462,
+      "kind": "native",
+      "fp_counted": true
+    },
+    "cam:CAM_FRONT_LEFT": {
+      "mAP50": 0.6073154183601276,
+      "mAP50-95": 0.37887180588886843,
+      "n_gt": 15834,
+      "kind": "native",
+      "fp_counted": true
+    },
+    "cam:CAM_FRONT_RIGHT": {
+      "mAP50": 0.6424676720675697,
+      "mAP50-95": 0.4117473350415155,
+      "n_gt": 16014,
+      "kind": "native",
+      "fp_counted": true
+    },
+    "edge:touches_border": {
+      "mAP50": 0.7771850964674037,
+      "mAP50-95": 0.5689023601287172,
+      "n_gt": 10420,
+      "kind": "derived",
+      "fp_counted": true
+    },
+    "loc:boston-seaport": {
+      "mAP50": 0.503711460982785,
+      "mAP50-95": 0.3026709847355747,
+      "n_gt": 38943,
+      "kind": "native",
+      "fp_counted": true
+    },
+    "loc:singapore-onenorth": {
+      "mAP50": 0.637298717723538,
+      "mAP50-95": 0.3998594919093493,
+      "n_gt": 92733,
+      "kind": "native",
+      "fp_counted": true
+    },
+    "size:large": {
+      "mAP50": 0.8373591058487316,
+      "mAP50-95": 0.6286241132144734,
+      "n_gt": 28802,
+      "kind": "derived",
+      "fp_counted": true
+    },
+    "size:medium": {
+      "mAP50": 0.6199123748481005,
+      "mAP50-95": 0.3620529032682725,
+      "n_gt": 63429,
+      "kind": "derived",
+      "fp_counted": true
+    },
+    "size:small": {
+      "mAP50": 0.2846832784416238,
+      "mAP50-95": 0.11638624969490248,
+      "n_gt": 39445,
+      "kind": "derived",
+      "fp_counted": true
+    }
+  },
+  "excluded_slices_lt30_boxes": [],
+  "eval_seconds": 11.5,
+  "pycocotools": {
+    "AP": 0.3782993202737037,
+    "AP50": 0.6093792752174978
+  }
+}

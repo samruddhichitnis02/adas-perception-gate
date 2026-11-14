@@ -1,0 +1,346 @@
+{
+  "runs": {
+    "baseline_s0": {
+      "config": "baseline",
+      "seed": 0,
+      "train_minutes": 11.6,
+      "epochs": 12,
+      "imgsz": 640,
+      "mAP50": 0.6093792752174978,
+      "mAP50-95": 0.3782993202737036,
+      "per_class_AP50": {
+        "car": 0.7723071756796228,
+        "truck": 0.4722498010256451,
+        "bus": 0.42363506873942786,
+        "motorcycle": 0.690552626136745,
+        "bicycle": 0.6011285571108642,
+        "pedestrian": 0.5891150120531501,
+        "traffic_cone": 0.6940655344116967,
+        "barrier": 0.6319804265828304
+      },
+      "final_train_box_loss": 1.23645,
+      "final_train_cls_loss": 0.83048,
+      "taxonomy_overall": {
+        "correct": 79994,
+        "classification_error": 3534,
+        "localization_error": 8407,
+        "duplicate": 2731,
+        "background_fp": 8759,
+        "missed": 51682
+      },
+      "cpp_python_identical": true,
+      "pycocotools": {
+        "AP": 0.3782993202737037,
+        "AP50": 0.6093792752174978
+      }
+    },
+    "baseline_s1": {
+      "config": "baseline",
+      "seed": 1,
+      "train_minutes": 13.1,
+      "epochs": 12,
+      "imgsz": 640,
+      "mAP50": 0.611565975198924,
+      "mAP50-95": 0.37993702408583396,
+      "per_class_AP50": {
+        "car": 0.7758791206268362,
+        "truck": 0.4896130822086735,
+        "bus": 0.4354245920520264,
+        "motorcycle": 0.678048986776367,
+        "bicycle": 0.599579908543707,
+        "pedestrian": 0.5854768265947048,
+        "traffic_cone": 0.6989109957211339,
+        "barrier": 0.6295942890679431
+      },
+      "final_train_box_loss": 1.23366,
+      "final_train_cls_loss": 0.82971,
+      "taxonomy_overall": {
+        "correct": 80573,
+        "classification_error": 3795,
+        "localization_error": 8602,
+        "duplicate": 2982,
+        "background_fp": 9651,
+        "missed": 51103
+      },
+      "cpp_python_identical": true,
+      "pycocotools": {
+        "AP": 0.3799370240858339,
+        "AP50": 0.611565975198924
+      }
+    },
+    "degraded_s0": {
+      "config": "degraded",
+      "seed": 0,
+      "train_minutes": 2.5,
+      "epochs": 1,
+      "imgsz": 640,
+      "mAP50": 0.32711541162323654,
+      "mAP50-95": 0.17003330669451686,
+      "per_class_AP50": {
+        "car": 0.597802412913454,
+        "truck": 0.1692654849914799,
+        "bus": 0.0,
+        "motorcycle": 0.3656594016685206,
+        "bicycle": 0.2921250397014219,
+        "pedestrian": 0.3895314586711688,
+        "traffic_cone": 0.46173117747771386,
+        "barrier": 0.34080831756213326
+      },
+      "final_train_box_loss": 1.80424,
+      "final_train_cls_loss": 1.6861,
+      "taxonomy_overall": {
+        "correct": 51848,
+        "classification_error": 4870,
+        "localization_error": 9243,
+        "duplicate": 2958,
+        "background_fp": 10810,
+        "missed": 79828
+      },
+      "cpp_python_identical": true,
+      "pycocotools": {
+        "AP": 0.17003330669451686,
+        "AP50": 0.3271154116232366
+      }
+    },
+    "hires_s0": {
+      "config": "hires",
+      "seed": 0,
+      "train_minutes": 20.2,
+      "epochs": 12,
+      "imgsz": 960,
+      "mAP50": 0.6999487934429356,
+      "mAP50-95": 0.45589723858734865,
+      "per_class_AP50": {
+        "car": 0.8407208475738656,
+        "truck": 0.5731367258162069,
+        "bus": 0.5048231316711349,
+        "motorcycle": 0.7651722779450932,
+        "bicycle": 0.6802554727053927,
+        "pedestrian": 0.7134270765535972,
+        "traffic_cone": 0.8048283711404697,
+        "barrier": 0.7172264441377239
+      },
+      "final_train_box_loss": 1.13897,
+      "final_train_cls_loss": 0.78673,
+      "taxonomy_overall": {
+        "correct": 91701,
+        "classification_error": 3558,
+        "localization_error": 7087,
+        "duplicate": 2507,
+        "background_fp": 9508,
+        "missed": 39975
+      },
+      "cpp_python_identical": true,
+      "pycocotools": {
+        "AP": 0.4558972385873486,
+        "AP50": 0.6999487934429356
+      }
+    },
+    "hires_s1": {
+      "config": "hires",
+      "seed": 1,
+      "train_minutes": 26.0,
+      "epochs": 12,
+      "imgsz": 960,
+      "mAP50": 0.7045100867133122,
+      "mAP50-95": 0.4589977225995529,
+      "per_class_AP50": {
+        "car": 0.8408064231152795,
+        "truck": 0.5779227009963191,
+        "bus": 0.5288107456738073,
+        "motorcycle": 0.7576098667092259,
+        "bicycle": 0.6925675356410234,
+        "pedestrian": 0.7091185314599812,
+        "traffic_cone": 0.8091753025273326,
+        "barrier": 0.7200695875835282
+      },
+      "final_train_box_loss": 1.13795,
+      "final_train_cls_loss": 0.78611,
+      "taxonomy_overall": {
+        "correct": 92332,
+        "classification_error": 3483,
+        "localization_error": 6869,
+        "duplicate": 2401,
+        "background_fp": 10711,
+        "missed": 39344
+      },
+      "cpp_python_identical": true,
+      "pycocotools": {
+        "AP": 0.45899772259955285,
+        "AP50": 0.7045100867133123
+      }
+    },
+    "strong_aug_s0": {
+      "config": "strong_aug",
+      "seed": 0,
+      "train_minutes": 12.4,
+      "epochs": 12,
+      "imgsz": 640,
+      "mAP50": 0.5846565041273284,
+      "mAP50-95": 0.35479635932109993,
+      "per_class_AP50": {
+        "car": 0.7581998167696752,
+        "truck": 0.45959721190866987,
+        "bus": 0.389080006358804,
+        "motorcycle": 0.6474779122746598,
+        "bicycle": 0.5725216474588473,
+        "pedestrian": 0.568443451341229,
+        "traffic_cone": 0.6689541954971078,
+        "barrier": 0.6129777914096342
+      },
+      "final_train_box_loss": 1.32111,
+      "final_train_cls_loss": 0.91282,
+      "taxonomy_overall": {
+        "correct": 77310,
+        "classification_error": 3780,
+        "localization_error": 8604,
+        "duplicate": 2962,
+        "background_fp": 8668,
+        "missed": 54366
+      },
+      "cpp_python_identical": true,
+      "pycocotools": {
+        "AP": 0.3547963593211,
+        "AP50": 0.5846565041273284
+      }
+    },
+    "strong_aug_s1": {
+      "config": "strong_aug",
+      "seed": 1,
+      "train_minutes": 11.3,
+      "epochs": 12,
+      "imgsz": 640,
+      "mAP50": 0.5863296087987782,
+      "mAP50-95": 0.3546419388295575,
+      "per_class_AP50": {
+        "car": 0.7604047740879597,
+        "truck": 0.46845200402545706,
+        "bus": 0.37524946458156905,
+        "motorcycle": 0.6567233191299113,
+        "bicycle": 0.5692912911778389,
+        "pedestrian": 0.5672085431765215,
+        "traffic_cone": 0.6757789670369466,
+        "barrier": 0.617528507174021
+      },
+      "final_train_box_loss": 1.32559,
+      "final_train_cls_loss": 0.91381,
+      "taxonomy_overall": {
+        "correct": 78255,
+        "classification_error": 3801,
+        "localization_error": 8936,
+        "duplicate": 3046,
+        "background_fp": 9620,
+        "missed": 53421
+      },
+      "cpp_python_identical": true,
+      "pycocotools": {
+        "AP": 0.35464193882955763,
+        "AP50": 0.5863296087987782
+      }
+    }
+  },
+  "configs": {
+    "baseline": {
+      "factor": "reference (imgsz 640, default aug, 12 epochs)",
+      "seeds": [
+        0,
+        1
+      ],
+      "n_seeds": 2,
+      "mAP50": {
+        "mean": 0.6104726252082109,
+        "min": 0.6093792752174978,
+        "max": 0.611565975198924,
+        "values": [
+          0.6093792752174978,
+          0.611565975198924
+        ]
+      },
+      "mAP50-95": {
+        "mean": 0.3791181721797688,
+        "min": 0.3782993202737036,
+        "max": 0.37993702408583396,
+        "values": [
+          0.3782993202737036,
+          0.37993702408583396
+        ]
+      }
+    },
+    "strong_aug": {
+      "factor": "augmentation strength (mixup .2, scale .9, hsv_s .9, hsv_v .6, rot 5deg)",
+      "seeds": [
+        0,
+        1
+      ],
+      "n_seeds": 2,
+      "mAP50": {
+        "mean": 0.5854930564630533,
+        "min": 0.5846565041273284,
+        "max": 0.5863296087987782,
+        "values": [
+          0.5846565041273284,
+          0.5863296087987782
+        ]
+      },
+      "mAP50-95": {
+        "mean": 0.35471914907532875,
+        "min": 0.3546419388295575,
+        "max": 0.35479635932109993,
+        "values": [
+          0.35479635932109993,
+          0.3546419388295575
+        ]
+      }
+    },
+    "hires": {
+      "factor": "input resolution (imgsz 960)",
+      "seeds": [
+        0,
+        1
+      ],
+      "n_seeds": 2,
+      "mAP50": {
+        "mean": 0.7022294400781239,
+        "min": 0.6999487934429356,
+        "max": 0.7045100867133122,
+        "values": [
+          0.6999487934429356,
+          0.7045100867133122
+        ]
+      },
+      "mAP50-95": {
+        "mean": 0.45744748059345075,
+        "min": 0.45589723858734865,
+        "max": 0.4589977225995529,
+        "values": [
+          0.45589723858734865,
+          0.4589977225995529
+        ]
+      }
+    },
+    "degraded": {
+      "factor": "training length (1 epoch)",
+      "seeds": [
+        0
+      ],
+      "n_seeds": 1,
+      "mAP50": {
+        "mean": 0.32711541162323654,
+        "min": 0.32711541162323654,
+        "max": 0.32711541162323654,
+        "values": [
+          0.32711541162323654
+        ]
+      },
+      "mAP50-95": {
+        "mean": 0.17003330669451686,
+        "min": 0.17003330669451686,
+        "max": 0.17003330669451686,
+        "values": [
+          0.17003330669451686
+        ]
+      }
+    }
+  },
+  "note": "Seed variation is the range over 2 seeds; with n=2 it is a crude noise indicator, not a CI."
+}

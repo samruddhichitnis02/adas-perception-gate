@@ -1,0 +1,75 @@
+{
+  "dataset": "nuImages v1.0 (all), keyframes",
+  "seed": 0,
+  "train_subset": {
+    "images_used": 16000,
+    "boxes": 128753,
+    "selection": "random.Random(0).sample of the 67k train keyframes",
+    "images_in_full_train_split": 67279
+  },
+  "val": {
+    "images": 16445,
+    "boxes": 131676,
+    "selection": "FULL val split (no subsetting)"
+  },
+  "classes": [
+    "car",
+    "truck",
+    "bus",
+    "motorcycle",
+    "bicycle",
+    "pedestrian",
+    "traffic_cone",
+    "barrier"
+  ],
+  "class_map": {
+    "vehicle.car": "car",
+    "vehicle.truck": "truck",
+    "vehicle.bus.bendy": "bus",
+    "vehicle.bus.rigid": "bus",
+    "vehicle.motorcycle": "motorcycle",
+    "vehicle.bicycle": "bicycle",
+    "human.pedestrian.adult": "pedestrian",
+    "human.pedestrian.child": "pedestrian",
+    "human.pedestrian.construction_worker": "pedestrian",
+    "human.pedestrian.police_officer": "pedestrian",
+    "movable_object.trafficcone": "traffic_cone",
+    "movable_object.barrier": "barrier"
+  },
+  "model": "yolo11s.pt",
+  "epochs_main": 12,
+  "batch": 32,
+  "configs": {
+    "baseline": {
+      "imgsz": 640,
+      "epochs": 12
+    },
+    "hires": {
+      "imgsz": 960,
+      "epochs": 12
+    },
+    "strong_aug": {
+      "imgsz": 640,
+      "epochs": 12,
+      "mixup": 0.2,
+      "scale": 0.9,
+      "hsv_s": 0.9,
+      "hsv_v": 0.6,
+      "degrees": 5.0
+    },
+    "degraded": {
+      "imgsz": 640,
+      "epochs": 1
+    }
+  },
+  "curve_val_subset_images": 2000,
+  "versions": {
+    "python": "3.12.10",
+    "torch": "2.11.0+cu128",
+    "ultralytics": "8.4.212",
+    "numpy": "2.5.4",
+    "pycocotools": "2.0.11",
+    "numba": "0.68.1"
+  },
+  "gpu": "NVIDIA GeForce RTX 5090"
+}

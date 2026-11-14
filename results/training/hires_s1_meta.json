@@ -1,0 +1,12 @@
+{
+  "config": "hires",
+  "seed": 1,
+  "hyperparams": {
+    "imgsz": 960,
+    "epochs": 12
+  },
+  "base_weights": "yolo11s.pt",
+  "batch": 32,
+  "train_seconds": 1560.6,
+  "weights": "runs/hires_s1/final.pt"
+}

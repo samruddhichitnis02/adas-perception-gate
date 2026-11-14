@@ -1,0 +1,17 @@
+{
+  "config": "strong_aug",
+  "seed": 0,
+  "hyperparams": {
+    "imgsz": 640,
+    "epochs": 12,
+    "mixup": 0.2,
+    "scale": 0.9,
+    "hsv_s": 0.9,
+    "hsv_v": 0.6,
+    "degrees": 5.0
+  },
+  "base_weights": "yolo11s.pt",
+  "batch": 32,
+  "train_seconds": 746.4,
+  "weights": "runs/strong_aug_s0/final.pt"
+}

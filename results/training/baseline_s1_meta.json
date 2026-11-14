@@ -1,0 +1,12 @@
+{
+  "config": "baseline",
+  "seed": 1,
+  "hyperparams": {
+    "imgsz": 640,
+    "epochs": 12
+  },
+  "base_weights": "yolo11s.pt",
+  "batch": 32,
+  "train_seconds": 783.0,
+  "weights": "runs/baseline_s1/final.pt"
+}

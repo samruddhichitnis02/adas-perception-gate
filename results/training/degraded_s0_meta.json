@@ -1,0 +1,12 @@
+{
+  "config": "degraded",
+  "seed": 0,
+  "hyperparams": {
+    "imgsz": 640,
+    "epochs": 1
+  },
+  "base_weights": "yolo11s.pt",
+  "batch": 32,
+  "train_seconds": 149.4,
+  "weights": "runs/degraded_s0/final.pt"
+}
